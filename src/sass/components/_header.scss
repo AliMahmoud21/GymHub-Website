@@ -1,0 +1,32 @@
+// Importing the global files
+@use '../globals/variables' as *;
+
+
+// Styling the header component
+header {
+    display: flex;
+    justify-content: space-between;
+    // padding: 1rem 2rem;
+
+    .logo {
+        width: 10rem;
+    }
+
+    .header-menu {
+        display: flex;
+        gap: 2rem;
+
+        li {
+
+            a {
+                color: $light;
+                transition: $transition;
+
+                &:hover {
+                    color: $orange;
+
+                }
+            }
+        }
+    }
+}
