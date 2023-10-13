@@ -9,7 +9,7 @@ import tick from '../assets/tick.png';
 
 const Reasons = () => {
   return (
-    <section className="reasons">
+    <section className="reasons" id='whyUs'>
       {/* Left reasons */}
       <div className="left-reason">
         <img src={reasonsImage1} alt="reasons image" />
@@ -31,6 +31,15 @@ const Reasons = () => {
           <div><img src={tick} alt="" /><span>TRAIN SMARTER AND FASTER THAN BEFORE</span></div>
           <div><img src={tick} alt="" /><span>1 FREE PROGRAM FOR NEW MEMBER</span></div>
           <div><img src={tick} alt="" /><span>RELIABLE PARTNERS</span></div>
+        </div>
+
+        <span className='our-partner'>OUR PARTNERS</span>
+
+        {/* Patners Images */}
+        <div className="partners-holder">
+          <img src={nb} alt="Partners Images" />
+          <img src={adidas} alt="Partners Images" />
+          <img src={nike} alt="Partners Images" />
         </div>
       </div>
     </section>
