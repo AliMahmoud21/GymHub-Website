@@ -75,6 +75,9 @@ header {
 header .logo {
   width: 10rem;
 }
+header .bars-icon {
+  display: none;
+}
 header .header-menu {
   display: flex;
   gap: 2rem;
@@ -91,7 +94,8 @@ header .header-menu li a:hover {
   header {
     position: relative;
   }
-  header .bars-menu {
+  header .bars-icon {
+    display: block;
     font-size: 1.5rem;
     color: #fff;
   }
