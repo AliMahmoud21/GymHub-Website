@@ -1,33 +1,22 @@
 import { useState } from 'react';
 import logo from '../assets/logo.png'
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
 
-  const showNavbar = () => {
-    setNavbar(true);
-  }
-
-  const closeNavbar = () => {
-    setNavbar(false);
-  }
+  const toggleNavbar = () => {
+    setNavbar(!navbar); // Toggle the navbar state (open/close)
+  };
 
   return (
     <header>
       <img src={logo} className='logo' alt="logo" />
 
       <FaBars
-        className='bars-menu'
-        onClick={showNavbar}
-        style={{ display: navbar ? 'none' : 'block' }}
-      />
-
-      <FaTimes
-        className='bars-menu'
-        onClick={closeNavbar}
-        style={{ display: navbar ? 'block' : 'none' }}
+        className='bars-icon'
+        onClick={toggleNavbar}
       />
 
       <ul className={`header-menu ${navbar ? 'show' : ''}`}>
